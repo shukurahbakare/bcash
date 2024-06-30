@@ -1,4 +1,9 @@
-import React from 'react'
+import React from 'react';
+import "./style.scss";
+import Image from 'next/image';
+import mock1 from "@/components/assets/mock1.png";
+import mock2 from "@/components/assets/mock2.png";
+
 
 const AboutSection = () => {
   return (
@@ -19,8 +24,9 @@ const AboutSection = () => {
         </div>
 
         <div>
-          <img src="../components/assets/mock1.png" alt="mobile phone" />
-          <img src="../components/assets/mock2.png" alt="mobile phone" />
+        <Image src={mock1} alt="mobile phone" />
+        <Image src={mock2} alt="mobile phone" />
+    
         </div>
 
       </section>

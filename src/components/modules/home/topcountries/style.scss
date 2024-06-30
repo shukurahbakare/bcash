@@ -1,0 +1,55 @@
+@use "../../../../styles/index.scss" as *;
+
+.top_countries {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4rem;
+  
+    &_container {
+      width: 100%;
+      max-width: $max-w-6xl;
+  
+      &_content {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1.5rem;
+        overflow: hidden;
+  
+        &_card {
+          border: 2px solid #d6d6d6; 
+          border-radius: 0.5rem;
+          padding: 0 1rem;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          opacity: 0; 
+          transform: translateY(20px);
+          animation: fadeInUp 0.6s ease forwards;
+  
+          p {
+            color: #5F5F65;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    // Add a loop to generate the delay for each card
+    @for $i from 1 through 12 {
+      .top_countries_container_content_card:nth-of-type(#{$i}) {
+        animation-delay: #{0.2 * $i}s;
+      }
+    }
+  }

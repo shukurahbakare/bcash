@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <section className="hero">
       <div className="hero_container">
-        <h1>Sending Made Easy</h1>
+        <h1 className="hero_container_header">Sending Made Easy</h1>
         <section className="hero_container_modules">
           <QR />
           <Exchange />

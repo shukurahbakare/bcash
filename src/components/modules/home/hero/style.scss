@@ -9,24 +9,21 @@
   border-radius: 3rem;
   background-color: $primary;
   background: $primary-gradient;
-  padding-bottom: 4rem;
+  padding: 3rem 0 4rem 0;
 
 
   &_container {
-    max-width: $max-w-6xl;
+    max-width: $max-w-5xl;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1rem;
+    // padding: 2rem;
 
-    @include custom-media-query("mobile", $max-w-md) {
-      padding: 1rem;
-      background-color: red;
-    }
-
-    h1 {
+    &_header {
       position: relative;
-      font-size: clamp(1rem, -0.3323rem + 5.988vw, 3.5rem);
+      font-size: clamp(2.25rem, -0.3323rem + 5.988vw, 3.25rem);
       z-index: 1;
       background-color: transparent;
 
@@ -35,7 +32,7 @@
         width: 100%;
         height: 20px;
         position: absolute;
-        top: 3.75rem;
+        top: 3.15rem;
         left: 0;
         background-image: url("../../../assets/icons/Subtract.png");
         background-repeat: no-repeat;
@@ -45,14 +42,14 @@
     }
 
     &_modules {
-      max-width: $max-w-6xl;
+      max-width: $max-w-5xl;
       width: 100%;
       display: grid;
       grid-template-columns: repeat(5, minmax(0, 1fr));
       gap: 2rem;
 
-      @include custom-media-query("mobile", $max-w-md) {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+      @include custom-media-query("mobile", $max-w-xl) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
       }
 
       aside {
@@ -60,7 +57,7 @@
         &:first-child {
           grid-column: span 3 / span 3;
 
-          @include custom-media-query("mobile", $max-w-md) {
+          @include custom-media-query("mobile", $max-w-xl) {
             grid-column: span 1 / span 1;
           }
         }
@@ -68,13 +65,11 @@
         &:last-child {
           grid-column: span 2 / span 2;
 
-          @include custom-media-query("mobile", $max-w-md) {
+          @include custom-media-query("mobile", $max-w-xl) {
             grid-column: span 1 / span 1;
           }
         }
       }
     }
   }
-
-
 }

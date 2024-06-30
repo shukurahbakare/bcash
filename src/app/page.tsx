@@ -1,16 +1,10 @@
 import React from 'react'
-import HomeComponent from '@/components/modules/home'
-import type { Metadata } from 'next';
+import HomePage from './(pages)/home/page'
 
-export const metadata: Metadata = {
-  title: "BCash App", 
-  description: "Home",
-};
-
-const HomePage = () => {
+const page = () => {
   return (
-    <div><HomeComponent /></div>
+    <div><HomePage /></div>
   )
 }
 
-export default HomePage
+export default page

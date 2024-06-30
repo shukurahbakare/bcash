@@ -1,0 +1,52 @@
+@use "../../../styles/index.scss" as *;
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_container {
+    max-width: $max-w-5xl;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    nav {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      gap: 2rem;
+      font-size: 1.2rem;
+
+      @include custom-media-query("mobile", $max-w-2xl) {
+        display: none;
+      }
+
+      a {
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+      }
+
+      a.router-link-exact-active {
+        color: $primary;
+      }
+    }
+
+    button {
+      padding: 0.5rem 1.5rem;
+      border-radius: 3rem;
+      background-color: $primary;
+      border: 2px solid $primary;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 30px;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}

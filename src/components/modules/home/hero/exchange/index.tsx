@@ -10,15 +10,15 @@ const Exchange = () => {
       </header>
       <div className="exchange-section_details">
         <div className="exchange-section_details_content">
-          <h1>Calculate Rates</h1>
+          <h2>Calculate Rates</h2>
           <div className="exchange_cards">
             <div>
               <span>You Send</span>
-              <p>$ 0</p>
+              <p>$0</p>
             </div>
             <div>
               <span>You Send</span>
-              <p>₦ 0</p>
+              <p>₦0</p>
             </div>
             <p className="exchange-section_footer">
               Exchange Rate: 1 GBP = 158.48 Ksh <br />

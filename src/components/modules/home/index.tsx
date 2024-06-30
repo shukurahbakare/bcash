@@ -3,6 +3,7 @@ import HeroSection from "./hero";
 import FeaturesSection from "./features";
 import AboutSection from "./about";
 import TopCountriesSection from "./topcountries";
+import TestimoonialSlider from "./slider";
 
 const HomeComponent = () => {
   return (
@@ -11,6 +12,7 @@ const HomeComponent = () => {
       <FeaturesSection />
       <AboutSection />
       <TopCountriesSection />
+      <TestimoonialSlider />
     </div>
   );
 };

@@ -11,6 +11,17 @@
     &_container {
       width: 100%;
       max-width: $max-w-6xl;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+
+      h2 {
+        font-size: 44px;
+        font-weight: 700;
+        color: #2A2A2A;
+        text-align: center;
+      }
   
       &_content {
         display: grid;
@@ -19,9 +30,9 @@
         overflow: hidden;
   
         &_card {
-          border: 2px solid #d6d6d6; 
+          border: 1px solid #d6d6d6; 
           border-radius: 0.5rem;
-          padding: 0 1rem;
+          padding: 1rem 1rem;
           display: flex;
           align-items: center;
           gap: 1rem;
@@ -31,8 +42,8 @@
   
           p {
             color: #5F5F65;
-            font-size: 24px;
-            font-weight: 700;
+            font-size: 16px;
+            font-weight: 500;
             line-height: 24px;
           }
         }
@@ -46,7 +57,6 @@
       }
     }
   
-    // Add a loop to generate the delay for each card
     @for $i from 1 through 12 {
       .top_countries_container_content_card:nth-of-type(#{$i}) {
         animation-delay: #{0.2 * $i}s;

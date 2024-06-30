@@ -36,21 +36,17 @@ const FeaturesSection = () => {
     <section className="features">
       <div className="features_container">
         <div className="features_container_content">
-          {/* <div className="features_container_content_card"> */}
           {features.map((feature, index) => (
             <div className="features_container_content_card" key={index}>
               <div className="features_container_content_card_icon">
                 <Image src={feature.icon} alt="icon" />
               </div>
-              <div className="features_container_content_card_title">
-                {feature.name}
-              </div>
-              <div className="features_container_content_card_desc">
-                {feature.desc}
+              <div className="features_container_content_card_details">
+                <p>{feature.name}</p>
+                <p>{feature.desc}</p>
               </div>
             </div>
           ))}
-          {/* </div> */}
         </div>
       </div>
     </section>

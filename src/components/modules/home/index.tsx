@@ -9,7 +9,7 @@ const HomeComponent = () => {
     <div>
       <HeroSection />
       <FeaturesSection />
-      {/* <AboutSection /> */}
+      <AboutSection />
       <TopCountriesSection />
     </div>
   );

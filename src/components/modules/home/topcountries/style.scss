@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 4rem;
+    gap: 4rem;
   
     &_container {
       width: 100%;
@@ -28,6 +29,11 @@
         grid-template-columns: repeat(4, minmax(0, 1fr));
         gap: 1.5rem;
         overflow: hidden;
+
+        @include custom-media-query("mobile", $max-w-md) {
+          padding: 2rem;
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
   
         &_card {
           border: 1px solid #d6d6d6; 
@@ -47,6 +53,23 @@
             line-height: 24px;
           }
         }
+      }
+    }
+
+    &_cta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #2A2A2A;
+      background-color: white;
+      border-radius: 3rem;
+      padding: 0.75rem 2rem;
+      font-weight: 500;
+      transition: all 1s ease;
+
+      &:hover {
+        background-color: #2A2A2A;
+        color: white;
       }
     }
   

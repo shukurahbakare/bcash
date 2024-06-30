@@ -1,39 +1,44 @@
 import React from 'react';
 import "./style.scss";
+import kenya from "../../../assets/kenya.png"
+import civ from "../../../assets/civ.png"
+import ghana from "../../../assets/ghana.png"
+import nigeria from "../../../assets/nigeria.png"
+import tanzania from "../../../assets/tanzania.png"
 
 const TopCountriesSection = () => {
 
     const topCountriesArr =  [
         {
-          icon: "IconEasy",
+          icon: kenya,
           name: "Cameroon",
         },
         {
-          icon: "IconSupport",
+          icon: civ,
           name: "Côte d'Ivoire",
         },
         {
-          icon: "IconRocket",
+          icon: ghana,
           name: "Ghana",
         },
         {
-          icon: "IconShield",
+          icon: kenya,
           name: "Kenia",
         },
         {
-          icon: "IconEasy",
+          icon: tanzania,
           name: "Cameroon",
         },
         {
-          icon: "IconSupport",
+          icon: civ,
           name: "Côte d'Ivoire",
         },
         {
-          icon: "IconRocket",
+          icon: ghana,
           name: "Ghana",
         },
         {
-          icon: "IconShield",
+          icon: kenya,
           name: "Kenia",
         },
       ]

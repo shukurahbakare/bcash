@@ -18,9 +18,9 @@
       overflow: hidden;
 
       &_card {
-        opacity: 0; // Initially hidden
-        transform: translateY(20px); // Initially positioned lower
-        animation: fadeInUp 0.6s ease forwards; // Animation properties
+        opacity: 0; 
+        transform: translateY(20px); 
+        animation: fadeInUp 0.6s ease forwards; 
 
         p {
           color: #5F5F65;

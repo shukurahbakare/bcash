@@ -1,0 +1,57 @@
+// Convert px to rem
+
+$primary: #D91E23;
+$primary-text: #2A2A2A; 
+$primary-gradient: linear-gradient(180deg, #D7E1EF 0%, #F8E5E8 100%);
+
+$base-font-size: 16px;
+@function px-to-rem($px, $suffix: 1rem) {
+	@return calc(($px / $base-font-size) * $suffix);
+}
+
+//
+$max-w-xs	: 320px;
+$max-w-sm	: 384px;
+$max-w-md	: 448px;
+$max-w-lg	: 512px;
+$max-w-xl	: 576px;
+$max-w-2xl	: 672px;
+$max-w-3xl	: 768px;
+$max-w-4xl	: 896px;
+$max-w-5xl	: 1024px;
+$max-w-6xl	: 1152px;
+
+// Media Query
+@mixin custom-media-query($device-type, $width) {
+	@if $device-type == "mobile" {
+		@media (max-width: $width) {
+			@content;
+		}
+	} @else if $device-type == "desktop" {
+		@media (min-width: $width) {
+			@content;
+		}
+	} @else {
+		@warn 'Invalid argument for custom-media-query mixin. Please use mobile or desktop.';
+	}
+}
+
+@mixin scrollbar($width, $track, $thumb) {
+	&::-webkit-scrollbar {
+		width: px-to-rem($width);
+	}
+
+	&::-webkit-scrollbar-track {
+		background: $track;
+		margin-block: px-to-rem(8px);
+		border-radius: px-to-rem(50px);
+	}
+	&::-webkit-scrollbar-thumb {
+		background: $thumb;
+		border: px-to-rem(2px) solid track;
+		&:hover {
+			background: $thumb;
+		}
+		border-radius: px-to-rem(50px);
+	}
+}

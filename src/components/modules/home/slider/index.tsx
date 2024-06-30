@@ -57,6 +57,7 @@ const CardSlider: React.FC = () => {
 
   return (
     <div className="sliderContainer">
+      <h2>See what others are saying</h2>
       <div className="slider">
         {cards.map((card, index) => (
           <div

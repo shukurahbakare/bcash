@@ -1,5 +1,7 @@
 import React from "react";
 import { PiRocketLaunchDuotone, PiShieldCheckDuotone, PiUserFocusDuotone } from "react-icons/pi";
+import "./style.scss";
+
 
 const features: {
   name: string;

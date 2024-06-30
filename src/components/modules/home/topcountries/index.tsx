@@ -48,7 +48,7 @@ const TopCountriesSection = () => {
       {topCountriesArr.map((feature: any) => (
         <div className="top-countries-container-content-card" key={feature.name}>
           <div className="top-countries-container-content-card-icon">
-            <feature.icon />
+            {feature.icon }
           </div>
           <div className="top_countries_container_content_card_title">
             <p>{ feature.name}</p>

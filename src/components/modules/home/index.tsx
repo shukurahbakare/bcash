@@ -4,6 +4,7 @@ import FeaturesSection from "./features";
 import AboutSection from "./about";
 import TopCountriesSection from "./topcountries";
 import TestimoonialSlider from "./slider";
+import PartnersSection from "@/components/common/partners";
 
 const HomeComponent = () => {
   return (
@@ -13,6 +14,7 @@ const HomeComponent = () => {
       <AboutSection />
       <TopCountriesSection />
       <TestimoonialSlider />
+      <PartnersSection />
     </div>
   );
 };

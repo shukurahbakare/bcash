@@ -1,0 +1,48 @@
+@use "../../../../styles/index.scss" as *;
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+
+  &_container {
+    display: flex;
+    background: $primary-gradient;
+    max-width: $max-w-7xl;
+    border-radius: 2rem;
+
+    &_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+
+      padding: 5rem;
+
+      h1 {
+        color: $primary;
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+      }
+
+      &_cta {
+        display: flex;
+        gap: 0.5rem;
+
+        button {
+          padding: 0.25rem 1.25rem;
+          font-size: 1rem;
+          border-radius: 2.5rem;
+
+          &:nth-child(1) {
+            background-color: $primary;
+            color: white;
+            border: $primary;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,43 +1,19 @@
-import React from 'react';
-import "./style.scss";
-import Image from "next/image";
-import uba from "../../assets/uba.png";
-import ria from "../../assets/ria.png";
-import wave from "../../assets/wave.png";
-import partner from "../../assets/partner.png";
-import moneygram from "../../assets/moneygram.png";
-import westernunion from "../../assets/westernunion.png";
+import React from "react";
+import Banner from "./banner";
+import Scroll from "./scroll";
 
-const PartnersSections = () => {
-    const partners = [
-        {
-          icon: uba,
-          name: "UBA",
-        },
-        {
-          icon: ria,
-          name: "Ria",
-        },
-        {
-          icon: wave,
-          name: "Wave Money",
-        },
-        {
-          icon: partner,
-          name: "Partner Image",
-        },
-        {
-          icon: moneygram,
-          name: "MoneyGram",
-        },
-        {
-          icon: westernunion,
-          name: "Western Union",
-        }
-      ];
+const PartnersSection = () => {
   return (
-    <div>PartnersSections</div>
-  )
-}
+    <section>
+      <div>
+        <Banner />
+      </div>
 
-export default PartnersSections
+      <div>
+        <Scroll />
+      </div>
+    </section>
+  );
+};
+
+export default PartnersSection;

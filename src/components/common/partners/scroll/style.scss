@@ -1,0 +1,38 @@
+@use "../../../../styles/index.scss" as *;
+
+.scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.scroll-container {
+  padding: 2rem 0;
+  background: $primary-gradient;
+  border-radius: 2rem;
+  position: relative;
+  width: 100%;
+  max-width: $max-w-7xl;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scroll-content {
+  display: flex;
+  align-items: center;
+  animation: scroll 30s linear infinite;
+}
+
+.scroll-element {
+  flex: 0 0 auto;
+  width: 15rem;
+  margin-right: 2rem;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

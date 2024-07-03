@@ -24,8 +24,13 @@
 
 .scroll-element {
   flex: 0 0 auto;
-  width: 15rem;
+  width: 10rem;
   margin-right: 2rem;
+
+  img {
+    width: 5rem;
+    height: auto;
+  }
 }
 
 @keyframes scroll {

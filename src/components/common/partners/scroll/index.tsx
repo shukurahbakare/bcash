@@ -2,28 +2,48 @@ import React from "react";
 import "./style.scss";
 import Image from "next/image";
 import uba from "../../../assets/uba.png";
-import ria from "../../../assets/ria.png";
-import wave from "../../../assets/wave.png";
-import moneygram from "../../../assets/moneygram.png";
-import westernunion from "../../../assets/westernunion.png";
+import gtb from "../../../assets/gtbank.png"
+import afrimoney from "../../../assets/afrimoney.png"
+import mtn from "../../../assets/mtn.png"
+import orange from "../../../assets/orangemoney.png";
+import qmoney from "../../../assets/qmoney.png";
+import tipme from "../../../assets/tipme.png";
+import tmoney from "../../../assets/tmoney.png";
 
 const Scroll = () => {
   const partners = [
     { icon: uba, name: "UBA" },
-    { icon: ria, name: "Ria" },
-    { icon: wave, name: "Wave Money" },
-    { icon: moneygram, name: "MoneyGram" },
-    { icon: westernunion, name: "Western Union" },
+    { icon: gtb, name: "Ria" },
+    { icon: afrimoney, name: "Wave Money" },
+    { icon: mtn, name: "MoneyGram" },
+    { icon: orange, name: "Orange" },
+    { icon: qmoney, name: "Q Money" },
+    { icon: tipme, name: "tipme" },
+    { icon: tmoney, name: "tmoney" },
     { icon: uba, name: "UBA" },
-    { icon: ria, name: "Ria" },
-    { icon: wave, name: "Wave Money" },
-    { icon: moneygram, name: "MoneyGram" },
-    { icon: westernunion, name: "Western Union" },
+    { icon: gtb, name: "Ria" },
+    { icon: afrimoney, name: "Wave Money" },
+    { icon: mtn, name: "MoneyGram" },
+    { icon: orange, name: "Orange" },
+    { icon: qmoney, name: "Q Money" },
+    { icon: tipme, name: "tipme" },
+    { icon: tmoney, name: "tmoney" },
     { icon: uba, name: "UBA" },
-    { icon: ria, name: "Ria" },
-    { icon: wave, name: "Wave Money" },
-    { icon: moneygram, name: "MoneyGram" },
-    { icon: westernunion, name: "Western Union" },
+    { icon: gtb, name: "Ria" },
+    { icon: afrimoney, name: "Wave Money" },
+    { icon: mtn, name: "MoneyGram" },
+    { icon: orange, name: "Orange" },
+    { icon: qmoney, name: "Q Money" },
+    { icon: tipme, name: "tipme" },
+    { icon: tmoney, name: "tmoney" },
+    { icon: uba, name: "UBA" },
+    { icon: gtb, name: "Ria" },
+    { icon: afrimoney, name: "Wave Money" },
+    { icon: mtn, name: "MoneyGram" },
+    { icon: orange, name: "Orange" },
+    { icon: qmoney, name: "Q Money" },
+    { icon: tipme, name: "tipme" },
+    { icon: tmoney, name: "tmoney" },
   ];
 
   return (

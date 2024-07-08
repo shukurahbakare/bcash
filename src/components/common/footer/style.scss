@@ -1,0 +1,73 @@
+@use "../../../styles/index.scss" as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    max-width: $max-w-7xl;
+    width:80%;
+    border-radius: 2rem;
+    color: #8F8F99;
+    padding: 2rem;
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      width: 80%;
+      margin:0 auto;
+
+      .footer-left,
+      .footer-right {
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin-bottom: 10px;
+          }
+        }
+
+
+        button {
+          padding: 0.25rem 1.25rem;
+          font-size: 1rem;
+          border-radius: 2.5rem;
+
+          
+            background-color: $primary;
+            color: white;
+            border: $primary;
+          
+        }
+        
+      }
+    }
+
+   
+
+    .footer-bottom {
+      width: 80%;
+      margin: 0 auto;
+    font-size: .65rem; 
+     
+    }
+
+    hr {
+        // margin: 20px 0;
+        // width: 90%;
+        border: 0;
+        border-top: 1px solid #8F8F99;
+      }
+
+    span {
+        margin-top: 5px;
+    }
+  }
+}

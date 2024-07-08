@@ -1,0 +1,133 @@
+@use "../../../styles/index.scss" as *;
+
+.about {
+  margin-top: -1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+
+  @include custom-media-query("mobile", $max-w-md) {
+    padding: 4rem 2rem;
+  }
+
+  &_container {
+    max-width: $max-w-6xl;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      position: relative;
+      font-size: clamp(2rem, -0.3323rem + 5.988vw, 2.5rem);
+      z-index: 1;
+      background-color: transparent;
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        top: 2.5rem;
+        left: 0;
+      
+        background-image: url("../../assets/icons/SubtractY.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: -1;
+      }
+    }
+
+    &_modules {
+      max-width: $max-w-6xl;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2rem;
+
+      @include custom-media-query("mobile", $max-w-md) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 5rem;
+      }
+
+      div {
+         
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 2rem;
+
+          p {
+            color: var(--Neutral-Darkest, #2a2a2a);
+
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: -0.2px;
+          }
+
+          button {
+            padding: 0.5rem 1.5rem;
+            border-radius: 3rem;
+            background-color: $primary;
+            border: 2px solid $primary;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+
+            a {
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+        
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        &:last-child {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          animation: fadeIn 0.5s ease-in-out forwards;
+
+          img {
+            width: clamp(15rem, -0.3323rem + 5.988vw, 100%);
+            height: auto;
+            position: relative;
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in-out forwards;
+
+            &:first-child {
+              animation-delay: 0.1s;
+              bottom: 3rem;
+              left: 5rem;
+
+              @include custom-media-query("mobile", $max-w-md) {
+                left: 0;
+              }
+            }
+
+            &:last-child {
+              animation-delay: 0.2s;
+              top: 2rem;
+              left: -1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -14,6 +14,7 @@ const HomeComponent = () => {
       <AboutSection />
       <TopCountriesSection />
       <TestimoonialSlider />
+      
     </div>
   );
 };

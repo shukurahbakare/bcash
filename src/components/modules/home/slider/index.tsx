@@ -108,7 +108,7 @@ const CardSlider: React.FC = () => {
       <h2>See what others are saying</h2>
       <div className="slider">
         {cards.map((card, index) => (
-          <div>
+          <div key={card.id}>
             <div
               key={card.id}
               className="card"

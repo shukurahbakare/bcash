@@ -37,12 +37,16 @@ span {
       grid-template-columns: repeat(1, minmax(0, 1fr));
       gap: 1.5rem;
 
-      div {
+      &_card {
         background-color: white;
         padding: 0.5rem 1rem;
         border-radius: 0.7rem;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
 
-        span {
+       
+        .label {
           font-size: 12px;
           opacity: 0.5;
           margin-bottom: -0.5rem;
@@ -80,5 +84,24 @@ span {
     line-height: 1rem;
     text-align: center;
     font-size: 13px;
+  }
+}
+
+.css-b62m3t-container {
+  display: flex;
+  align-content: center;
+  margin: 0.5rem 0;
+
+  .css-13cymwt-control {
+    background-color: #e4e4e4;
+    border-radius: 10rem;
+    padding: 0.35rem 1rem;
+    border: none;
+  }
+  .css-1u9des2-indicatorSeparator {
+    display: none;
+  }
+  .css-1xc3v61-indicatorContainer {
+    color: rgb(7, 7, 7);
   }
 }

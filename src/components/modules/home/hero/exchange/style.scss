@@ -6,6 +6,11 @@ span {
   margin: 0;
 }
 
+// input {
+//   outline: none;
+//   border: none;
+// }
+
 .exchange-section {
   width: 100%;
   display: flex;
@@ -39,7 +44,7 @@ span {
 
       &_card {
         background-color: white;
-        padding: 0.5rem 1rem;
+        // padding: 0.5rem 1rem;
         border-radius: 0.7rem;
         display: flex;
         justify-content: space-between;

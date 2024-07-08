@@ -27,6 +27,7 @@
         margin: 0;
       }
 
+     
       &_cta {
         display: flex;
         gap: 0.5rem;
@@ -43,6 +44,25 @@
           }
         }
       }
+
+      
     }
+  }
+}
+
+.bnb {
+  display:flex;
+  width:80%;
+  // margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+
+  .visit {
+    margin-top: 40px;
+  }
+
+  .logo {
+    background-color: yellow;
   }
 }

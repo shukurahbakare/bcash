@@ -60,10 +60,21 @@ span {
 
           input {
             // background-color: red;
+            padding: 0 0.25rem;
             border: none;
             width: 10rem;
             outline: none;
             color: #5f5f65;
+            input[type="number"]::-webkit-outer-spin-button,
+            input[type="number"]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+    
+            input[type="number"] {
+              -moz-appearance: textfield; /* For Firefox */
+              appearance: textfield;      /* Standard property for future compatibility */
+          }
           }
         }
       }
@@ -102,6 +113,7 @@ span {
 
   .css-13cymwt-control {
     background-color: #e4e4e4;
+    outline: none;
     border-radius: 10rem;
     padding: 0.35rem 1rem;
     border: none;
@@ -113,3 +125,4 @@ span {
     color: rgb(7, 7, 7);
   }
 }
+ 

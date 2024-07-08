@@ -43,7 +43,7 @@ span {
         border-radius: 0.7rem;
         display: flex;
         justify-content: space-between;
-        align-self: center;
+        align-items: center;
 
        
         .label {
@@ -52,11 +52,19 @@ span {
           margin-bottom: -0.5rem;
           display: block;
         }
-
-        p {
+        label {
           color: #5f5f65;
           font-size: 28px;
           font-weight: 500;
+          display: flex;
+
+          input {
+            // background-color: red;
+            border: none;
+            width: 10rem;
+            outline: none;
+            color: #5f5f65;
+          }
         }
       }
     }

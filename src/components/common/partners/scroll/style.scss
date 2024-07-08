@@ -33,6 +33,19 @@
   }
 }
 
+.scroll-button {
+  // position: absolute;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0.5rem;
+  z-index: 1;
+  
+  background-color: red;
+}
+
 @keyframes scroll {
   from {
     transform: translateX(0);

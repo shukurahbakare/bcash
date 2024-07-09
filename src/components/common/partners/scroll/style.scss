@@ -37,6 +37,19 @@ Image {
   }
 }
 
+.scroll-button {
+  // position: absolute;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 0.5rem;
+  z-index: 1;
+  
+  background-color: red;
+}
+
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -70,17 +83,29 @@ Image {
   margin-bottom: 20px;
 }
 
-.card {
+// .card {
   // min-width: 10rem;
-  margin: 0 10px;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #cccccc99;
-  box-shadow: 0 4px 6px rgba(164, 164, 164, 0.1);
+  // margin: 0 10px;
+  // padding: 20px;
+  // border-radius: 10px;
+  // border: 1px solid #cccccc99;
+  // box-shadow: 0 4px 6px rgba(164, 164, 164, 0.1);
+  // scroll-snap-align: center;
+  // font-size: 0.95rem;
+  // display: grid;
+  // gap: 2rem;
+
+  .car{
+    box-shadow: 0 4px 6px rgba(164, 164, 164, 0.1);
   scroll-snap-align: center;
   font-size: 0.95rem;
   display: grid;
   gap: 2rem;
+    margin: 0 10px;
+  padding: 10px;
+  border-radius: 10px;
+  // border: 1px solid #cccccc99;
+  min-width: 7rem;
 
   &_details {
     display: flex;

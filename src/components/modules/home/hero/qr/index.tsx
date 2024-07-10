@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import Image from "next/image";
-import woman from "@/components/assets/hero_woman.png";
+import woman from "@/components/assets/hero-img.png"
 import qr from "@/components/assets/qr_code.png";
 
 const QR = () => {

@@ -8,6 +8,7 @@
   border-radius: 1.5rem;
   background-color: white;
   overflow: hidden;
+  min-height: 30rem;
 
   &_details {
     padding: 1rem;
@@ -29,6 +30,9 @@
   &_image {
     overflow: hidden;
     height: 65%;
+    background: url("../../.././../../components/assets/hero_woman.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 
     img {
       width: 100%;

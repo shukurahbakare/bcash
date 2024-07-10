@@ -8,7 +8,7 @@ const QR = () => {
   return (
     <aside className="qr-section">
       <div className="qr-section_image">
-        <Image src={woman} alt="Our happy user" />
+        {/* <Image src={woman} alt="Our happy user" /> */}
       </div>
       <div className="qr-section_details">
         <Image src={qr} alt="qr code" />

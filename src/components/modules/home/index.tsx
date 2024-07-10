@@ -10,7 +10,7 @@ const HomeComponent = () => {
     <div>
       <HeroSection />
       <FeaturesSection />
-      <AboutSection />
+      {/* <AboutSection /> */}
       <TopCountriesSection />
       <TestimoonialSlider />
     </div>

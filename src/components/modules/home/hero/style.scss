@@ -11,6 +11,10 @@
   background: $primary-gradient;
   padding: 3rem 0 4rem 0;
 
+  @include custom-media-query("mobile", $max-w-md) {
+    padding: 2rem 1rem;
+  }
+
 
   &_container {
     max-width: $max-w-6xl;
